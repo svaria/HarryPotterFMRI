@@ -1,6 +1,6 @@
-function [valErr, trainingErr, nb] = makeAndClassify(data, time, ratio)
-
-[tX,tY, vX,vY] = genTrainingAndValidationSet(data, time, ratio);
+function [valErr, trainingErr, nb] = makeAndClassify(filename, ratio)
+subject = load(filename);
+[tX,tY, vX,vY] = genTrainingAndValidationSet(subject.data, subject.time, ratio);
 
 [valErr, trainingErr, nb] = classifyTraining(tX, tY, vX, vY);
 
