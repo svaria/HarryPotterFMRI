@@ -1,9 +1,9 @@
 function colsToKeep = preprocessData(data,labels)
-% Preprocesses fMRI data.
+Preprocesses fMRI data.
 
 
-% Returns cols with in class variance > 0 such that nb calc works
-% there are originally 4 classes
+Returns cols with in class variance > 0 such that nb calc works
+there are originally 4 classes
 
 classes = cell(1,4);
 
@@ -20,6 +20,6 @@ end
 
 colsToKeep = setdiff(1:size(data,2), colsToRemove);
 
-% Choose 
+Choose 
 
 end

@@ -1,5 +1,6 @@
-function colsToKeep = preprocessData(data,labels)
-% Preprocesses fMRI data.
+function colsToKeep = chooseFeatures(data,labels, featureRatio)
+% Preprocesses fMRI data to choose only some fraction of the original
+% features. All remaining features have non-zero in-class variance.
 
 
 % Returns cols with in class variance > 0 such that nb calc works
@@ -20,6 +21,9 @@ end
 
 colsToKeep = setdiff(1:size(data,2), colsToRemove);
 
-% Choose 
+% Choose a random sample of features
+nCols = length(colsToKeep);
+perm = randperm(nCols);
+colsToKeep = colsToKeep(perm(1:floor(featureRatio*nCols));
 
 end
