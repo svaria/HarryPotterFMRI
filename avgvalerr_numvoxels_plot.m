@@ -25,4 +25,4 @@ figure
 plot(1:10, avgterrs);
 title('Average Training Error against number of voxels');
 xlabel('Number of Voxels');
-ylabel('Average Training Error');
+ylabel('Average Trainingg Error');
