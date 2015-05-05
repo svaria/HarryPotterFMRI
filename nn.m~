@@ -1,0 +1,2 @@
+feat = [zeros(228,195); features(1).values, features(2).values, features(3).values, features(4).values, features(5).values, features(6).values,features(7).values,features(8).values, features(9).values,features(10).values]';
+data()
