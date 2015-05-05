@@ -3,7 +3,7 @@ function [valErr, trainingErr, nb] = ...
     
     % makes the naive bayes model based on trainingX and trainingY
     % and computes validation Error and training Error
-    nb = fitNaiveBayes(trainingX,trainingY);
+    nb = fitNaiveBayes(trainingX,trainingY,'Distribution','kernel');
     predictTY = predict(nb, trainingX);
     predictVY = predict(nb, validationX);
     trainingErr = sum(predictTY ~= trainingY)/length(trainingY);
