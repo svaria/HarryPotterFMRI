@@ -1,0 +1,3 @@
+[submodule "rnnlib"]
+	path = rnnlib
+	url = git@github.com:jpuigcerver/rnnlib.git

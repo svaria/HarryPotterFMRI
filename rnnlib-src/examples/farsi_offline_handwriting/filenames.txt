@@ -1,4 +1,0 @@
-data/010199.bmp
-data/126635.bmp
-data/211074.bmp
-data/302843.bmp
