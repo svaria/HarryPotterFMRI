@@ -21,4 +21,4 @@ end
 
 s1dat1 = s1dat1';
 
-feat1 = feat(:,1:1302);
+feat1 = feat_normalized(1:1302,:)';
