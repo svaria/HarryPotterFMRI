@@ -10,7 +10,7 @@ feat = [features(1).values, features(2).values, features(3).values, features(4).
 
 
 s1dat1 = zeros(1302,90);
-for i=9:334,
+for i=9:339,
     j = i-9;
     s1dat1(4*j+1,:) = roi_mean_activations1(i+1,:);
     s1dat1(4*j+2,:) = roi_mean_activations1(i+1,:);
@@ -21,7 +21,7 @@ s1dat1 = s1dat1';
 
 s1dat2 = zeros(length(1304:2654),90);
 for i=349:691,
-    j = i-349;
+    j = i-9;
     s1dat2(4*j+1,:) = roi_mean_activations1(i+1,:);
     s1dat2(4*j+2,:) = roi_mean_activations1(i+1,:);
     s1dat2(4*j+3,:) = roi_mean_activations1(i+1,:);
@@ -30,8 +30,8 @@ end
 s1dat2 = s1dat2';
 
 s1dat3 = zeros(length(2655:3713),90);
-for i=701:970,
-    j = i-701;
+for i=:691,
+    j = i-9;
     s1dat3(4*j+1,:) = roi_mean_activations1(i+1,:);
     s1dat3(4*j+2,:) = roi_mean_activations1(i+1,:);
     s1dat3(4*j+3,:) = roi_mean_activations1(i+1,:);
@@ -40,8 +40,8 @@ end
 s1dat3 = s1dat3';
 
 s1dat4 = zeros(length(3714:5176),90);
-for i=980:1350,
-    j = i-980;
+for i=9:639,
+    j = i-9;
     s1dat4(4*j+1,:) = roi_mean_activations1(i+1,:);
     s1dat4(4*j+2,:) = roi_mean_activations1(i+1,:);
     s1dat4(4*j+3,:) = roi_mean_activations1(i+1,:);
@@ -50,7 +50,7 @@ end
 s1dat4 = s1dat4';
 
 
-feat1 = feat_normalized(1:1302,:)';
-feat2 = feat_normalized(1304:2654,:)';
-feat3 = feat_normalized(2655:3713,:)';
-feat4 = feat_normalized(3714:5176,:)';
+feat1 = feat_normalized(1:1303,:)';
+feat2 = feat_nomalized(1304:2654,:)';
+feat3 = feat_nomalized(2655:3713,:)';
+feat4 = feat_nomalized(3714:5176,:)';
