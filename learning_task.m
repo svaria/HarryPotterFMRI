@@ -9,7 +9,7 @@ fs{2} = feat2;
 fs{3} = feat3;
 fs{4} = feat4;
 genErr = 0;
-sliceSize = 20;
+sliceSize = 30;
 
 for i = 1:100,
     a = randperm(4,2);
