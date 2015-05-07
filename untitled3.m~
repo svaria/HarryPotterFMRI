@@ -30,9 +30,10 @@ for i = 1:100,
     err1 = []
     err2 = []
     for j=1:19,
-        dats{starts{1,2}}(:,starts{1,1}:starts{1,1}+20);
-        dats{starts{2,2}}(:,starts{2,1}:starts{2,1}+20);
-        predicted_out
+        slice1 = dats{starts{1,2}}(:,starts{1,1}:starts{1,1}+20);
+        slice2 = dats{starts{2,2}}(:,starts{2,1}:starts{2,1}+20);
+        err1 = [err1, sum(slice1 - predicted_out{j})^2];
+        err2 = [err2, (slice2 - predicted_out{j})^2];
     end
     
     
