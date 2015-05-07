@@ -8,12 +8,11 @@ for row=1:num_samples,
 	sample = data(row, :);
 
 for ROInum=1:num_rois,
+    ROInum
 	[~, cols] = find(meta.colToROInum == ROInum);
 	roi_mean_activations1(row, ROInum) = mean(sample(cols));
 end
 
 end
 
-[~,nanCols] = find(isnan(roi_mean_activations1));
-
-roi_mean_activations1(:,nanCols) = [];
+find(roi_mean_activations1(

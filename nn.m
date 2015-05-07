@@ -9,7 +9,7 @@ feat = [features(1).values, features(2).values, features(3).values, features(4).
 %s1dat = s1dat';
 
 
-s1dat1 = zeros(1302,117);
+s1dat1 = zeros(1302,90);
 
 for i=10:165,
     j = i-10;

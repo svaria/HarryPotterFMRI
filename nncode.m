@@ -49,11 +49,11 @@ view(net)
 
 % Plots
 % Uncomment these lines to enable various plots.
-%figure, plotperform(tr)
-%figure, plottrainstate(tr)
-%figure, plotresponse(t,y)
-%figure, ploterrcorr(e)
-%figure, plotinerrcorr(x,e)
+figure, plotperform(tr)
+figure, plottrainstate(tr)
+figure, plotresponse(t,y)
+figure, ploterrcorr(e)
+figure, plotinerrcorr(x,e)
 
 % Early Prediction Network
 % For some applications it helps to get the prediction a timestep early.
